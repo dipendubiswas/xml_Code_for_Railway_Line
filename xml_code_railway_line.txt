@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sld:StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:sld="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" version="1.0.0">
+  <sld:NamedLayer>
+    <sld:Name>Railway Styler</sld:Name>
+    <sld:UserStyle>
+      <sld:Name>Railway Styler</sld:Name>
+      <sld:FeatureTypeStyle>
+        <sld:Rule>
+          <sld:Title>Railway Line</sld:Title>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter> <!-- Line color (black) -->
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter> <!-- Line width -->
+              <sld:GraphicStroke>
+                <sld:Graphic>
+                  <sld:Mark>
+                    <sld:WellKnownName>cross</sld:WellKnownName>
+                    <sld:Fill>
+                      <sld:CssParameter name="fill">#000000</sld:CssParameter> <!-- Cross color (black) -->
+                    </sld:Fill>
+                  </sld:Mark>
+                  <sld:Size>10</sld:Size> <!-- Size of the cross -->
+                </sld:Graphic>
+              </sld:GraphicStroke>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+      </sld:FeatureTypeStyle>
+    </sld:UserStyle>
+  </sld:NamedLayer>
+</sld:StyledLayerDescriptor>
